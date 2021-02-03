@@ -8,7 +8,7 @@ int solution(int arr[], size_t arr_len) {
     answer=arr[0];
     for(int i=1; i<arr_len; i++)
     {
-        answer=lcd(answer,arr[i]);
+        answer=lcm(answer,arr[i]);
     }
     
     return answer;
