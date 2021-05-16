@@ -16,5 +16,3 @@ for i in moves:
                 j[i-1]=0
                 flag = 1
 count*=2             
-
-

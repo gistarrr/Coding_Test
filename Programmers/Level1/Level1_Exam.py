@@ -22,9 +22,9 @@ def solution(answers):
             answer.append(count[2][0])    
     return answer
 
-# enumerate í•¨ìˆ˜ ì´ìš©
-# ë¦¬ìŠ¤íŠ¸ ë‚´í¬ ì‘ìš©
-# itertools ëª¨ë“ˆì— ìˆëŠ” cycle
+# enumerate ÇÔ¼ö ÀÌ¿ë
+# ¸®½ºÆ® ³»Æ÷ ÀÀ¿ë
+# itertools ¸ğµâ¿¡ ÀÖ´Â cycle
 
 def soultion2(answers):
     Pattern = [[1, 2, 3, 4, 5],

@@ -6,4 +6,3 @@ int main(void)
 	printf("Hello");
 	return 0;
 }
-ㅋ
