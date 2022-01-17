@@ -1,17 +1,17 @@
 N, M = map(int, input().split())
-numbers = [i for i in range(1, N+1)]
+visited = [False] * (N+1)
 result = []
-def dfs(i, count):
+def dfs(count):
     global result
     if count == M:
-        print(result)
-        result = result[:-1]
+        print(" ".join(map(str, result)))
         return
     else :
-        for j in range(i+1, N):
-            result.append(numbers[i])
-            dfs(j, count+1)
-            result = result[:-1]
-
-dfs(0, 0)
-
+        for j in range(1, N+1):
+            if not visited[j] :
+                result.append(j)
+                visited[j] = True
+                dfs(count+1)
+                result.pop()
+                visited[j] = False
+dfs(0)
